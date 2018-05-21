@@ -1,0 +1,551 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
+
+*{
+    box-sizing: border-box;
+}
+html{
+      background: rgb(195,195,195); /* For browsers that do not support gradients */
+    background: linear-gradient(rgb(195,195,195), #fff); /* Standard syntax */
+     background-size: cover;
+    height:100% ;
+     background-repeat: no-repeat;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+@keyframes bounce {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    transform: translate3d(0,-4px,0);
+  }
+}
+
+.bold{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+.thirdfase{
+  width: 990px;
+  height: 350px;
+}
+.fourtyfase{
+  border-top:30px dotted rgb(195,195,195);
+  border-width:medium;
+  width: 990px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.fiftfase{
+  background-color: rgb(195,195,195);
+  width: 990px;
+  height: 100%;
+  font-size: 10px;
+  padding:0 100px 0 100px;
+}
+.fiftfase p{
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.two-thirdfase{
+    width:810px;
+    margin-top: 50px;
+    float: right;
+   
+
+}
+.two-fourtyfase{
+     margin-top: 5px;
+    margin-bottom: 5px;
+    width: 120px;
+    border-right: 2px dotted rgb(195,195,195); 
+}
+.two-tab{
+    width: 800px;
+    margin-right: 10px;
+    float:right;
+}
+.clearleft{
+    clear: left;
+}
+p{
+    margin:0;
+    padding: 0;
+}
+button, submit
+{
+  border:none;
+    background-color: transparent;
+}
+input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+header{
+    margin-top: 20px;
+}
+#centrar{
+     margin: 0 auto;
+    width:990px;
+    background-color:white;
+    background-size: cover;
+    height:100% ;
+    background-repeat: no-repeat;
+
+}
+.clear{
+    clear: both;
+}
+.menu,.menu >li >ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+.menu{
+  height: 40px;
+  list-style-type: none;
+  border: 0.1px solid #585858;
+  text-align: right;
+
+
+}
+.menu a {
+    text-decoration: none;
+   padding: 10px 20px;
+    display: inline-block;
+    color: black;
+}
+.menu > li{
+     margin-left: 15px;
+    margin-right: 15px;
+}
+.menu >li:hover > a{
+    width: 100%;
+    height: 40px;
+    background-color: #1f253c;
+    color: white;
+}
+.menu >li a:focus{
+    width: 100%;
+    height: 40px;
+    background-color: #1f253c;
+    color: white;
+}
+.menu >li >ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+.menu >li >ul{/*=#menu ul */
+
+    position: absolute;
+    display: none;
+
+}
+.menu >li:hover ul{
+    display: block;
+}
+.menu > li {
+    display: inline-block;
+}
+
+.menu >li >ul a {
+    text-decoration: none;
+     background-color: #686f79;
+    padding: 10px 20px;
+    display: block;
+}
+.menu >li >ul a:hover {
+  background-color: #444a51;
+    border: 1px solid #b7bac3;
+}
+.menu >li >ul a:active {
+    font-weight: bold;
+}
+
+.logo{
+    background-image: url(../img/logo1.jpg);
+    float: left;
+    width: 360px;
+    height: 100px;
+}
+
+.pesquisa{
+    float:left;
+    margin-left: 30px;
+    margin-top: 40px;
+    width: 400px;
+}
+.barra_pes,input[id="text"]{
+
+    width: 200px;
+    height: 30px;
+    transition: width 1s ease-in-out;
+}
+.barra_pes:hover{
+    padding-left: 5px;
+    width: 400px;
+    transition: width 1s ease-in-out;
+}
+.icon_pes,button[id="submit"]{
+    width: 16px;
+    margin-left: -45px;
+    margin-top: -25px;
+    height: 16px;
+    background-image: url(../img/lupa_sprites.png);
+    background-position: 0 0;
+    border:none;
+}
+.icon_pes:hover{
+    background-image: url(../img/lupa_sprites.png);
+    margin-left: -16px;
+    margin-top: -16px;
+    background-position: 0 1;
+}
+.country{
+    float: left;
+    margin-left: 30px;
+}
+.btn{
+    clear: left;
+    margin-top: -15px;
+    float:right;
+    display: inline-block;
+     appearance: none;
+    background-color:#F15922;
+    width: 100px;
+    height: 30px;
+    color: aliceblue;
+}
+.redes{
+    margin-left: 10px;
+    margin-top: 65px;
+    margin-bottom: 5px;
+}
+.icon{
+    width: 18px;
+    color:#AFB0B2;
+    margin-right: 8px;
+}
+.sticker{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+
+.inicio{
+    float: left;
+}
+.data{
+    float:right;
+}
+
+.promocoes{
+    float: left;
+    width: 140px;
+    height: 220px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.promocoes:hover{
+  float: left;
+  width: 140px;
+  height: 220px;
+  margin-left: 10px;
+  margin-right: 10px;
+   box-shadow: 3px 3px 10px black;
+   font-weight: 700;
+}
+.promocoes > img{
+    width: 140px;
+    height: 220px;
+}
+
+.promocoes > p{
+    margin-top:5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.newsletter{
+    float: right;
+    width: 240px;
+    height: 240px;
+    margin-bottom: 5px;
+}
+
+.newsletter > form{
+    background-color: darkgray;
+}
+.btn_news{
+    width: 28px;
+    height: 28px;
+    background-image: url(../img/submeter_formulario.png);
+}
+
+.newspace{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.formato{
+  padding-bottom: 8px;
+
+}
+.input{
+  width:170px;
+}
+.slide{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+.slideimg{
+    margin-right: 10px;
+    margin-top: 10px;
+    float: right;
+    background-image: url(../img/tab1.png);
+    background-repeat: no-repeat;
+    width: 770px;
+}
+.slide{
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: inline-block;
+    width:  200px;
+    background-color: black;
+    color: white;
+
+}
+.slide a{
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    color: white;
+}
+.slide a:hover{
+     width: 200px;
+    background-color: rgb(65,65,65);
+    color: rgb(0,157,224);
+    font-size: 16px;
+}
+.sticker{
+position: absolute;
+  padding-top: 40px;
+  color: white;
+  text-align: center;
+	width: 130px;
+	height:  130px;
+	margin-left: 200px;
+  margin-top: 80px;
+	border-radius: 999px;
+  background: red; /* For browsers that do not support gradients */
+ background: -webkit-linear-gradient(left top, red, white); /* For Safari 5.1 to 6.0 */
+ background: -o-linear-gradient(bottom right, red, white); /* For Opera 11.1 to 12.0 */
+ background: -moz-linear-gradient(bottom right, red, white); /* For Firefox 3.6 to 15 */
+ background: linear-gradient(to bottom right, red, white);
+
+}
+
+.destaque{
+    margin-top: 10px;
+}
+.imgdestaque{
+  float: left;
+  width:170px;
+}
+.textdestaque{
+  width: 800px;
+}
+.textdestaque > p{
+  padding-top:10px;
+}
+
+.ballonspace{
+    margin-top:50px;
+}
+
+.ballon {
+   width: 80px;
+   height: 50px;
+   color: white;
+   text-align: center;
+   background: red;
+  margin-left: 650px;
+   position: absolute;
+   -moz-border-radius:    10px;
+   -webkit-border-radius: 10px;
+   border-radius:         10px;
+}
+.ballon:before {
+   content:"";
+   position: absolute;
+   right: 70%;
+   top: 50px;
+   width: 0;
+   height: 0;
+   border-width:10px 3px 0; /* vary these values to change the angle of the vertex */
+  border-style:solid;
+  border-color:red transparent;
+}
+
+.ballongray {
+   width: 80px;
+   height: 50px;
+   color: white;
+   text-align: center;
+   background: gray;
+  margin-left: 750px;
+   position: absolute;
+   -moz-border-radius:    10px;
+   -webkit-border-radius: 10px;
+   border-radius:         10px;
+}
+.ballongray:before {
+   content:"";
+   position: absolute;
+   right: 70%;
+   top: 50px;
+   width: 0;
+   height: 0;
+   border-width:10px 3px 0; /* vary these values to change the angle of the vertex */
+  border-style:solid;
+  border-color:gray transparent;
+}
+
+.ballongreen {
+   width: 80px;
+   height: 50px;
+   color: white;
+   text-align: center;
+   background: green;
+  margin-left: 850px;
+   position: absolute;
+   -moz-border-radius:    10px;
+   -webkit-border-radius: 10px;
+   border-radius:         10px;
+}
+.ballongreen:before {
+   content:"";
+   position: absolute;
+   right: 70%;
+   top: 50px;
+   width: 0;
+   height: 0;
+   border-width:10px 3px 0; /* vary these values to change the angle of the vertex */
+  border-style:solid;
+  border-color:green transparent;
+}
+
+.imgao{
+  position: absolute;
+  background-image: url(../img/acordo_ortografico.png);
+  width: 100px;
+  height: 53px;
+  border-top-right-radius:10px;
+  border-bottom-right-radius:10px;
+  margin-top: 544px;
+  margin-left: -40px;
+  animation-name: bounce;
+  transform-origin: center bottom;
+}
+.imgao:hover{
+  position: absolute;
+  background-image: url(../img/acordo_ortografico.png);
+  margin-left: -8px;
+  width: 121px;
+  height: 138px;
+}
+.imgao:active {
+
+        -webkit-animation: bounce 1s infinite;
+        animation:bounce 1s infinite
+      }
+
+.promocao2fase{
+    width: 100px;
+    height: 150px;
+    float:left;
+    margin-bottom: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    
+}
+.promocao2fase > img{
+    width: 100px;
+    height: 150px;
+}
+.promocao2fase:hover{
+    width: 100px;
+    box-shadow: 3px 3px 10px black;
+    margin-bottom: 80px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;    
+    font-weight: 700;
+}
+.imgasterix{
+    width: 157px;
+    float: left;
+}
+.asterix{
+    float: right;
+    width: 630px;
+    padding-right:10px;
+    
+}
+.asterix p:nth-child(2) {
+        padding-top: 20px;
+        padding-bottom: 20px;
+}
+.tabmold{
+    width: 800px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+.tab{
+     display:none;
+}
+.btn_tab{
+    background-color:rgb(195,195,195);
+    border-radius: 3px;
+    height: 30px;
+    border: 1px solid cadetblue;
+    margin-right: -4px;
+    font-size: 16px;
+    color: white;
+}
+.btn_tab:active{
+    background-color: orange;
+    border-radius: 3px;
+    height: 30px;
+    border: 1px solid cadetblue;
+    margin-right: -4px;
+    font-size: 16px;
+    color: white;
+}
+
+#autor p:last-child{
+    padding-top: 10px;
+}
